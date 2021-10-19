@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="estilosmenu.css">
+	<link rel="stylesheet" href="lugares.css">
+    
+    <title></title>
+</head>
+<header>
+<body >
+
+	
+	<nav class="menu-main">
+       
+            <li><a href="#inicio" class="">Inicio</a></li>
+            <li><a href="#sitios">Lugares</a>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#Contac">Contactenos</a></li>
+    </nav>
+</header>
+
+    <div class="slider">
+		
+		<div class="carrusel ">
+			<div class="txt">
+				<h1>MACHU PICHU</h1>
+
+                <p>Ciudad Perdida de los Incas</p>
+                <a href="https://mochileros.org/machu-picchu-mochileros-reglas/" class="btnSlider">Ver más</a>
+			</div>
+			<img src="imagenes/MachuPicchu.jpg" style="width: 100%; height: 100%;">
+		</div>
+		
+		<div class="carrusel">
+			<div class="txt">
+				<h1>PETRA</h1>
+                <p>Ciudad Perdida de los nabateos en Jordania</p>
+                <a href="https://guias-viajar.com/viajes-jordania/petra-curiosidades-historia/" class="btnSlider">Ver más</a>
+			</div>
+			<img src="imagenes/petra7.jpg" style="width: 100%; height: 100%;">
+		</div>
+		
+		<div class="carrusel">
+			<div class="txt">
+				<h1>TAJ MAHAL</h1>
+                <p>La corona de los palacios</p>
+                <a href="https://www.iatiseguros.com/blog/visitar-el-taj-mahal/" class="btnSlider">Ver más</a>
+			</div>
+			<img src="imagenes/taj2.jpeg" style="width: 100%; height: 100%;">
+		</div>
+		
+		<div class="carrusel">
+			<div class="txt">
+				<h1>CHICHEN ITZÁ</h1>
+                <p>Boca del pozo de los itzaes</p>
+                <a href="https://miviajar.com/chichen-itza-por-tu-cuenta/" class="btnSlider">Ver más</a>
+			</div>
+			<img src="imagenes/chichen.jpg" style="width: 100%; height: 100%;">
+		</div>
+		
+		<div class="carrusel">
+			<div class="txt">
+				<h1>COLISEO ROMANO</h1>
+                <p>El anfiteatro Flavio</p>
+                <a href="https://www.mochileandoporelmundo.com/consejos-para-visitar-el-coliseo-de-roma/" class="btnSlider">Ver más</a>
+			</div>
+			<img src="imagenes/coliseo2.jpg" style="width: 100%; height: 100%;">
+		</div>
+
+        <div class="carrusel">
+			<div class="txt">
+				<h1>MURALLA CHINA</h1>
+                <p>La gran muralla</p>
+                <a href="https://www.mochileandoporelmundo.com/consejos-para-visitar-la-gran-muralla-china-mutianyu-por-libre-tour/" class="btnSlider">Ver más</a>
+			</div>
+			<img src="imagenes/muralla2.jpg" style="width: 100%; height: 100%;">
+		</div>
+
+        <div class="carrusel">
+			<div class="txt">
+				<h1>CRISTO REDENTOR</h1>
+                <p>Cristo de corcovado</p>
+                <a href="http://elmundoenlamochila.com/como-llegar-cristo-de-corcovado-por-libre/" class="btnSlider">Ver más</a>
+			</div>
+			<img src="imagenes/cristo7.jpg" style="width: 100%; height: 100%;">
+		</div>
+	
+		<!-- flechas con texto unicode &#10094-->
+		<a class="anterior" onclick="flechas(-1)">&#10094;</a>   
+  		<a class="siguiente" onclick="flechas(1)">&#10095;</a>
+		
+		<div class="botones" style="text-align:center">
+			<p class="boton" onclick="diapositivaActual(1)"></p>
+			<p class="boton" onclick="diapositivaActual(2)"></p>
+			<p class="boton" onclick="diapositivaActual(3)"></p>
+			<p class="boton" onclick="diapositivaActual(4)"></p>
+			<p class="boton" onclick="diapositivaActual(5)"></p>
+            <p class="boton" onclick="diapositivaActual(6)"></p>
+            <p class="boton" onclick="diapositivaActual(7)"></p>
+		</div>
+	</div>
+<br><br><br><br><br><br><br>
+
+<h1 align="center" >Siete nuevas maravillas del mundo</h1> <br><br><br>
+<div class="container" id="sitios">
+	
+	<div class="item">
+		<div class"item-text">
+			<h3>Petra, Jordania</h3>
+			<img src="imagenes/petra1.jpg" alt="" class="item-img" width="400" height="250"> 
+			<p>La capital del antiguo reino nabateo está esculpida sobre la roca.</p>
+			<a href="https://www.youtube.com/watch?v=xSiv4TkfSOE&feature=emb_title" class="btnvideo" >Ver más</a>
+
+		</div>
+	
+	</div>
+
+	<div class="item">
+		<div class"item-text">
+		<h3>Taj Mahal, India</h3>
+		<img src="imagenes/tajmahal2.jpg" alt="" class="item-img" width="400" height="250">
+		<p>El Taj Mahal es, posiblemente, uno de los edificios más románticos del mundo.</p>
+		<a href="https://www.youtube.com/watch?v=xSiv4TkfSOE&feature=emb_title" class="btnvideo" >Ver más</a>
+	</div>
+	<div class="contenedor-uno">
+		
+		
+
+	</div>
+</div>
+
+<div class="item">  
+	<div class"item-text">
+	<h3>Machu Pichu, Peru</h3>
+	<img src="imagenes/machupicchu.jpg" alt="" class="item-img" width="400" height="250">
+	<p>Una de las joyas andinas mejor conservadas del imperio inca.</p>
+	<a href="https://www.youtube.com/watch?v=xSiv4TkfSOE&feature=emb_title" class="btnvideo" >Ver más</a>
+</div>
+</div>
+
+<div class="item">
+	<div class"item-text">
+	<h3>La gran muralla, China</h3>
+	<img src="imagenes/gran_muralla.jpg" alt="" class="item-img" width="400" height="250"> 
+	<p>Es la obra arquitectónica más importante de China, una antigua fortaleza que a los chinos les sirvió como
+		defensa ante los posibles ataques mongoles.</p>
+		<a href="https://www.youtube.com/watch?v=xSiv4TkfSOE&feature=emb_title" class="btnvideo" >Ver más</a>
+</div>
+</div>
+
+<div class="item" >
+ <div class"item-text">
+	<h3>Cristo Redentor, Brasil</h3>
+	<img src="imagenes/cristo_redentor.jpg" alt="" class="item-img" width="400" height="250">
+	<p>El Cristo Redentor es una de las estatuas más famosas del mundo, y también una de las más grandes.</p>
+	<a href="https://www.youtube.com/watch?v=xSiv4TkfSOE&feature=emb_title" class="btnvideo" >Ver más</a>
+</div>
+</div>
+
+<div class="item">
+ <div class"item-text">
+	<h3>Coliseo, Roma</h3>
+	<img src="imagenes/coliseo_roma.jpg" alt="" class="item-img" width="400" height="250">
+	<p>Este anfiteatro es uno de los tesoros que el Imperio romano ha dejado como herencia a la Ciudad Eterna.</p>
+	<a href="https://www.youtube.com/watch?v=xSiv4TkfSOE&feature=emb_title" class="btnvideo" >Ver más</a>
+</div>
+</div>
+
+<div class="item">
+ <div class"item-text">
+	<h3>Chinchen Itza, Mexico</h3>
+	<img src="imagenes/chichen_itza_mexico.jpg" alt="" class="item-img" width="400" height="250">
+	<p>Esta antigua ciudad maya es uno de los centros arqueológicos más importantes de la península de Yucantán, en
+		México.</p>
+		<a href="https://www.youtube.com/watch?v=xSiv4TkfSOE&feature=emb_title" class="btnvideo" >Ver más</a>
+</div>
+</div>
+</div>
+
+<div align="center">
+	<section class="nos" id="nosotros">
+        <h1>¿Quienes somos?</h1> <br>
+        <p style="text-align:center" >Somos una empresa online que cuenta con un equipo joven altamente capacitado,  dirigido a la orientacion <br> y al asesoramiento a toda aquella persona con necesidad de obtener un viaje planificado a detalle.</p> <br>
+        <img src="imagenes/quien.jpg" style="width:50%;" >
+    </section>
+</div> <br><br>
+
+	<div align="center"> 
+		<section class="cont" id="Contac">
+			<h1>Contactenos</h1><br>
+				<form action="" method="get">
+					<p>
+						Nombre:<input type="text" class="campo"/><br>
+					</p>
+					<p>
+						Correo: <input type="imail" class="campo"/>
+					</p>
+					<p>
+						Asunto: <input type="text" class="campo"/>
+					</p>
+					<p>
+						Mensaje: <input type="tex"/>
+					</p>
+					<p>
+					<p class="center-content">
+						<input type="submit" class="btn btn-Black" value="enviar datos">
+					</p>
+				</form>
+			</section>
+	</div>
+</body>
+
+<script src="js.js"></script>
+<br><br>
+<footer align="center">Sena todos los derechos resevados, Analisis y desarrolo de sistemas de informacion 2021</footer>
+</html>

@@ -1,0 +1,169 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+/* parte de atras botones de abajo */
+.slider{
+	position: relative;
+	width: 100%;
+	height: 30%;
+	background: #2c3e50; 
+}
+/* tamaño del carrusel */
+.carrusel{
+	height:500px;
+	display: none;
+}
+/* flechas */
+.anterior, .siguiente{
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 50px;
+	padding: 15px;
+	cursor: pointer;
+	color: #fff;
+	transition: 0.1s;
+	user-select: none;
+}
+
+/* Hoover flechas */
+.anterior:hover, .siguiente:hover{
+	color: #00a7ff; /* blue */
+}
+/* Flechas a los lados */
+.siguiente{
+	right: 0;
+}
+/* Caja de botones de abajo, posicion */
+.botones{
+	width: 100%;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);   /* Cubicar a la mitad la caja de botones*/
+	bottom: 5px;
+	cursor: pointer;  /* transforma el cursor en una manito */
+}
+/* Elementos de caja de botones */
+.boton{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 3px solid #fff;
+	border-radius: 100%;
+	margin: 0 10px;
+	cursor: pointer;
+}
+/* hoover flechas y color boton 1 */
+.active, .boton:hover{
+	border-color: #00a7ff; /* blue */
+}
+
+/* texto y estilos letra animación de zoomimagen */
+
+.txt a{  
+	position: absolute;
+	color: #fff;
+	letter-spacing: 2px;
+	line-height: 35px;
+	top: 60%;
+	left: 5%;
+	-webkit-animation-name: position;
+  	-webkit-animation-duration: 2s;
+  	animation-name: position;
+  	animation-duration: 2s;
+	z-index: 1;
+}
+.txt p{
+	position: absolute;
+	color: #fff;
+	letter-spacing: 2px;
+	line-height: 35px;
+	top: 40%;
+	left: 5%;
+	-webkit-animation-name: position;
+  	-webkit-animation-duration: 2s;
+  	animation-name: position;
+  	animation-duration: 2s;
+	  z-index: 1;
+}
+.txt h1{
+	position: absolute;
+	color: #fff;
+	letter-spacing: 2px;
+	line-height: 35px;
+	top: 20%;
+	left: 5%;
+	-webkit-animation-name: position;
+  	-webkit-animation-duration: 2s;
+  	animation-name: position;
+  	animation-duration: 2s;
+	z-index: 1;
+}
+/* llamar animacion por nombre*/
+@keyframes position {
+  from {left: 25%;}
+  to {left: 5%;}
+}
+/* texto titulos*/
+.txt h1{
+	color: #ffffff; 
+	font-size: 43px;
+	margin-bottom: 70px;
+}
+/* texto parrafos*/
+.txt p{
+	font-weight: bold;
+	font-size: 20px;
+}
+/* animacion imagen*/
+.slider img{
+	-webkit-animation-name: zoomimagen;
+  	-webkit-animation-duration: 40s;
+  	animation-name: zoomimagen;
+  	animation-duration: 40s;
+}
+/* llamar animacion imagen, tamaño zoom*/
+@keyframes zoomimagen {
+  from {transform: scale(1, 1);}
+  to {transform: scale(2, 2);}
+}
+
+/* botones ver mas */
+.btnSlider{
+    color: rgb(0, 0, 0);
+    font-size: 15pt;
+    font-family: 'arial';
+    letter-spacing: 1px;
+    padding: 10px 50px;
+    border: 1px solid #CCC;
+    background: rgba(227, 221, 238, 0.55);
+    border-radius: 31px;
+    text-decoration: none;
+}
+.slider .btnSlider:hover{
+    background: rgb(146, 145, 145);
+    border: 1px solid rgb(146, 145, 145);
+}
+
+@media (max-width: 300px) {
+    
+    .anterior, .siguiente{
+     
+		top: 300px;
+    }
+    
+    .carrusel .txt a{
+        top: 350px;
+    }
+}
+header{
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+	z-index: 2;}
+
+	

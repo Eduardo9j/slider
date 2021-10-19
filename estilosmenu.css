@@ -1,0 +1,121 @@
+body{
+    margin: 0px;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background: #383838;
+    border-bottom: 1px solid #a7a7a7;
+    height: 50px;
+}
+nav li{
+    flex: 1;
+    font-family: arial;
+    display: flex;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;    
+    justify-content: center;
+    align-items: center;
+}
+nav li:hover{
+    background: #29487d;
+}
+
+nav li {
+    list-style: none;
+}
+nav li a{
+    background-color: #383838;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 15px 90px;
+    display: block;
+    
+}
+nav li a:hover{
+    background-color:#969696;
+    
+}
+nav > li{
+    float: left;
+}
+nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px; 
+}
+nav li:hover > ul{
+    display: block;
+    padding: 15px 90px;
+}
+nav li ul li{
+    position: relative;
+    top: 130px;
+    
+}
+
+form{
+    background-color: rgb(235, 235, 235);
+    border-radius: 3px;
+    color: rgb(0, 0, 0);
+    font-size: 0.8em;
+    padding: 20px;
+    margin: 0 auto;
+    width: 300px;
+}
+input, textarea{
+    border: 0;
+    outline: none;
+    width: 280px;
+}
+.campo{
+    border: solid 1px #ccc;
+    padding: 10px;
+}
+.campo:focus{
+    border-color: rgb(248, 238, 238);
+}
+.center-content{
+    text-align: center;
+}
+.btn{
+    font-size: 10px;
+    display: inline-block;
+    padding: 20px 15px;
+    text-decoration: none ;
+    text-shadow: 0 1px 0 rgb(253, 242, 242);
+    box-shadow: 0 1px 1px rgb(253, 244, 244);
+}
+.btn-Black{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(248, 248, 248);
+}
+.btn-Black-hover{
+    background-color: cornflowerblue;
+}
+.btn-Black:active{
+    background-color: rgb(2, 2, 2);
+    color: #383838;
+}
+
+
+@media (max-width: 768px) {
+    .logo{
+        display: none;
+    }
+    nav{
+        height: auto;
+        border-bottom: 0px;
+        display: table-caption;
+    }
+    nav ul{
+        top: 0;
+        left: 150px;
+        height: 45px;
+        display: block;
+    }
+}
